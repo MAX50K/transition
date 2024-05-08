@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    body {
+    margin: 0;
+    text-align: center;
+    }
+    
+    .wrap {
+    display: inline-block;
+    margin: 0 40px 20px 0;
+    background: rgba(228, 225, 228, .5);
+    }
+    
+    div {
+    width: 190px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    }
+    
+    .one,
+    .four,
+    .seven,
+    .ten {
+    background: rgba(135, 86, 120, .4);
+    }
+    
+    .three,
+    .six,
+    .nine {
+    background: rgba(255, 153, 0, .4);
+    }
+    
+    .two,
+    .five,
+    .eight {
+    background: rgba(0, 228, 246, .4);
+    }
+    
+    /* CSS переходи */
+    .box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: tomato;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /* transition-property: background-color, transform;
+    transition-duration: 900ms ;
+    transition-timing-function: linear; */
+    
+    /* Set transition values */
+    /* transition: background-color 900ms linear, transform 900ms, linear 900ms; */
+
+    animation: animate 4ms infinite 1s;
+    }
+
+.box:hover{
+    background-color: blueviolet;
+    transform: rotate(76deg);
+}
+
+.four {
+    transition: transform 500ms linear;
+}
+
+.four:hover {
+    transform: scaleX(-1);
+}
+
+.five{
+    transition: transform 500ms linear;
+}
+
+.five:hover {
+    transform: scaleY(1.5);
+}
+
+.three{
+    transition: transform 500ms ease-in;
+}
+
+.three:hover{
+    transform: translate(-20px, -20px);
+}
+
+.six{
+    transition: transform 500ms ease-in-out;
+    
+}
+
+.six:hover{
+    transform: scale(1.2, 0.5);
+}
+
+.seven{
+    transition: transform 500ms linear;
+}
+
+.seven:hover{
+    transform: rotate(720deg);
+}
+
+.eight{
+    transition: transform 500ms ease-in;
+}
+
+.eight:hover{
+    transform: skewX(20deg);
+}
